@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Robotica';
+  src: url(fontes/idroid.otf) format('opentype');
+  /*
+            Tipos de format()
+            -opentype(otf)
+            -truetype(ttf)
+            -embedded-opentype
+            -truetype-aat (Apple Advanced Typography)
+            -svg
+            */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  background-color: #84E1AD;
+}
+
+header {
+  background-image: linear-gradient(to bottom, #3CD781, #2B975B, #1A5C38);
+  color: #fff;
+  padding: 5px 8px;
+  margin: -19px;
+}
+
+header>h1 {
+  text-align: center;
+  font-size: 42px;
+  /* font-family: 'Robotica'; */
+  font-family: 'Montserrat', monospace;
+}
+
+article {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+h2 {
+  font-family: 'Robotica';
+  color: #1A5C38;
+  background: linear-gradient(to right, #43b978, #fff);
+  text-indent: 20px;
+}
+
+p {
+  text-indent: 20px;
+  text-decoration: solid;
+  font-style: normal;
+  text-align: justify;
+  margin: 3px 13px 0px 8px;
+}
+
+figcaption {
+  margin: 3px 13px 0px 120px;
+}
+
+figcaption>a:visited {
+  color: #2B975B;
+}
+
+header>p {
+  color: #bec4c0;
+  width: auto;
+  text-align: center;
+}
+
+nav>ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0px 15px -11px 7px;
+  padding: 8px 0px 1px 1px;
+}
+
+main {
+  margin: 1px 1px 1px 10px;
+  padding: -1px 1px 1px 10px;
+}
+
+article {
+  margin: 0px 25px 14px 25px;
+}
+
+.linha {
+  background-color: #3cd78277;
+}
+
+
+#bug {
+  margin: 10px 50px 10px 50px;
+  padding: 2px 1px 2px 250px;
+}
+
+#droid {
+  /* dessa maneira é a mais eficiente para se construir uma borda */
+  margin: 19px 0px 1px 0px;
+  border-top: 11px solid #08311b;
+  border-left: 20px solid #08311b;
+  border-bottom: 12px solid #08311b;
+  border-right: 29px solid #08311b;
+}
+
+section{
+  background-color: #84e1ac88;
+  border-radius: 5px;
+  margin: 10px 18px 9px 10px;
+  padding: 1px 1px 23px 1px;
+}
+
+h3{
+  background-color: #2B975B;
+  color: #fff;
+  border-radius: 4px 4px 0px 0px;
+  text-indent: 20px;
+  margin: -1px 0px 1px -1px;
+  padding: 1px 1px 1px 1px;
+}
+
+a{
+  color: #000;
+  /* display: inline-block; */
+}
+
+#history:hover{
+  color: #61b182;
+}
+
+aside>p{
+  margin: 8px 26px 1px 38px;
+  padding: 1px 5px 1px 8px;
+  /* outline: auto; */
+}
+
+section>p{
+  margin: 8px 26px 1px 38px;
+  padding: 1px 5px 1px 0px;
+}
+
+/* div:hover{
+ color: rgb(195, 204, 197);
+ display: inline;
+ position: absolute;
+ margin: 2px 100px 1px 0px;
+} */
+
+footer{
+  background-color: #08311b;
+  color: rgb(160, 96, 219);
+  text-align: center;
+  margin: 1px -18px 1px -13px;
+  /* padding: 1px 1px 1px 1px; */
+}

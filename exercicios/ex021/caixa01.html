@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Caixa</title>
+    <style>
+        body{
+            font: 1em Arial, Helvetica, sans-serif;
+            background-color: #A67458;
+
+        }
+
+        h2{
+            color: #632722;
+        }
+
+        header > nav{
+            color: #034AA6;
+            text-decoration: underline;
+        }
+
+        h1{
+            width: 275px;
+            height: 31px;
+            background-color: lightgray;
+            /* SHORTHAND */
+            border: 10px solid red;
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: red; */
+            padding: 20px;
+            /* SHORTHAND*/
+            outline: 6px solid blue;
+            /* outline-width: 30px;
+            outline-style: solid;
+            outline-color: blue; */
+            margin: 50px;
+        }
+
+        article > p{
+            font: normal 1em 'Times New Roman', Times, serif;
+        }
+
+        article#caixa{
+            background-color: snow;
+            width: 400px;
+            margin: auto;
+            padding: 1px 10px;
+            box-shadow: 3px 5px 4px rgb(66, 65, 65);
+            border-radius: 10px;/*Todos os vértices simétricos*/
+            border-radius: 10px 20px 30px 40px;/*cada vértice estará de um tamanho*/
+            border-radius: 10px 30px;
+        }
+        aside{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer{
+            font-style: italic;
+            background-color: #593122;
+            color: #D95043; 
+            text-align: center;   
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Exemplo de Caixa</h1>
+        <h2>Meu Site</h2>
+        <nav>Link Link Link Link...</nav> 
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Título</h2>
+                <p>Texto do artigo</p>
+                <aside>
+                    Conteúdo periférico do artigo 
+                </aside>
+            </article>
+            <article id="caixa">
+                <h2>Usando sombras</h2>
+                <p>Vamos aprender a usar sombras com esse exemplo simples. </p>
+            </article>
+            <aside>
+                Conteúdo periférico do site 
+            </aside>
+        </section>
+    </main>
+    <footer>
+        &tdot;Conteúdo do rodapé&tdot;
+    </footer>
+</body>
+</html>

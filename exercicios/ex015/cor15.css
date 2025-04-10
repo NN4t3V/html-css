@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* *{
+    height: 100% ;
+} */
+ /* usa para definir tamanho, seu uso é global */
+
+body{
+    background-image: linear-gradient(to right, #0445C2 , #0A2979,#441D67,#B61A62,
+    #FFC0EE );
+    /* posso colocar uma quantidade de cor que quero que se destaque, após a rgb.. então se atente a isso. ex.: {...#FFC0EE 2%} */
+}
+

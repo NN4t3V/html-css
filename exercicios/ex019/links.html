@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        /*Para seletores personalizados
+        > Children
+        :: Pseudo-elementos
+        :  Pseudo-classes
+        #  Id
+        .  Classe*/
+        body{
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-size: 2em;
+            color: darkgreen
+        }
+
+        h2{
+            color: green;
+        }
+
+        a{
+            /* Serve para links inéditos (não visitados) 
+            Observe que retirou o sublinhado, colocou em negrito e deixou na cor vermelha*/
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: #000;
+        }
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .especial:hover{
+            color: #fff;
+            background-color: #000;
+            text-decoration: none;
+        }
+
+        .especial::before{
+            content: '»';
+            /* content = conteúdo  */
+            font-weight: lighter;
+        }
+
+        .especial::after{
+            /* Lê: Depois de todos os links  */
+            content: '«';
+            font-weight: lighter;
+        }
+
+
+        #titulo-principal{
+            background-color: green;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        #tira::first-line{
+            background-color: antiquewhite;
+        }
+
+        .topico{
+            text-align: center;
+        }
+
+        .topico::first-letter{
+            color: aquamarine;
+            width: 500px;
+        }
+
+        .texto{
+            text-align: justify;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            background-color: yellow;
+        } 
+    
+    </style>
+</head>
+<body>
+    <h1 id="titulo-principal">Aprenda desenvolvimento web</h1>
+    <h1>Aprenda HTML</h1>
+    <h2 class="topico">Semântica web</h2>
+    <P class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto rem, eaque sit, repellendus ab incidunt iure reiciendis aliquid error unde, ut voluptates. Sed harum aperiam voluptates, eligendi commodi labore ab?</P>
+    <h1>Aprenda CSS</h1>
+    <h2 class="topico">Estilos web</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis autem vel, doloribus, voluptatem nulla dicta vitae facere quos inventore, doloremque quod? Nostrum nesciunt at delectus non quasi reprehenderit provident deleniti.</p>
+    <h1 id="tira">Personalizando um link</h1>
+    <p>Para aprender HTML5 e CSS3, acesse o <a href="http://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">Github do Guanabara</a></p>
+    <p>Se quiser conhecer mais sobre padrões, visite o site do <a href="http://www.w3c.br">Escritório do W3c Brasil</a></p>
+    <p>Para acomoanhar os cursos, acesse o <a href="http://www.youtube.com/cursoemvideo/" class="especial">canal do CursoemVideo</a></p>
+    <h1>Conteúdo especial</h1>
+    <div>
+        Passe o mouse aqui
+        <p>SURPRESAAA!</p>
+    </div>
+    <p>Veja o conteúdo oculto aparecendo!</p>
+    
+</body>
+</html>
