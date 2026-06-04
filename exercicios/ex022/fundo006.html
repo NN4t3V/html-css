@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo Fixo de Tela</title>
+    <style>
+        body{
+            height: 100vh;
+            /* shorthand */
+            background: black url('imagens/wallpaper002.jpg') center center/cover repeat-y fixed;
+            
+            /*
+             backgound: color > image > position > / > size > repeat > attachment.  
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-attachment: fixed; */
+            
+            /*background-size:100% 100%
+            Recurso interessante porque ele ficará responsivo*/
+
+            /*Ajuda a dar a responsividade no site + colocar o max-width:700 que deixa no tamanho máximo da tela*/
+          
+        }
+
+        main{
+            background-color: white;
+            max-width: 700px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum itaque deserunt illum optio rerum porro pariatur odit reprehenderit perspiciatis quaerat maiores, explicabo fugit. Odit soluta tempore obcaecati eius atque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum itaque deserunt illum optio rerum porro pariatur odit reprehenderit perspiciatis quaerat maiores, explicabo fugit. Odit soluta tempore obcaecati eius atque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum itaque deserunt illum optio rerum porro pariatur odit reprehenderit perspiciatis quaerat maiores, explicabo fugit. Odit soluta tempore obcaecati eius atque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsa sequi beatae labore dolore animi repellendus quidem, quo quod ab accusantium, tenetur quasi ex, aut rem explicabo quisquam itaque dolorum?</p>
+    </main>
+</body>
+</html>
