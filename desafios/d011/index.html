@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Astronauta</title>
+    <style>
+        body {
+            background-color: black;
+            display: contents;
+            /* display: contents;
+            Serve para anular borda,    TESTE E VERÁ!!! */
+        }
+
+        #espaco {
+            background-image: url('imagens/espaco.jpg');
+            background-size: 100% 100%;
+            position: relative;
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            /* O fundo dá scroll (espaço) mas o astronauta fica no meio
+            Quanto maior o height maior é a tela para baixo aumentando assim a 'scrollagem'.
+            */
+        }
+
+        #astronauta {
+            background: url('imagens/astronauta.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            height: 96vh;
+            background-attachment: scroll;
+            left: 50%;
+            top: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="espaco">
+        <article id="astronauta">
+
+        </article>
+    </section>
+
+</body>
+
+</html>
